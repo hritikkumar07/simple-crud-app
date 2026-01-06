@@ -16,9 +16,6 @@ app.get("/", (req, res) => {
   res.send("Hello from Node API Server Updated");
 });
 
-
-
-// mongodb connection
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => {
@@ -31,12 +28,11 @@ mongoose
     console.log("Connection failed!", error);
   });
 
-  // .then(() => {
-  //   console.log("Connected to database!");
-  //   app.listen(3000, () => {
-  //     console.log("Server is running on port 3000");
-  //   });
-  // })
-  // .catch(() => {
-  //   console.log("Connection failed!");
-  // });
+
+
+
+
+
+
+
+
